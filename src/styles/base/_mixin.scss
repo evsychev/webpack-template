@@ -1,0 +1,73 @@
+@mixin body-font {
+  font-family: "Open Sans";
+}
+
+@mixin display-font {
+  font-family: "brandon-grotesque";
+}
+
+@mixin heading-1 {
+  @include display-font;
+  font-size: px-to-rem(46px);
+  line-height: px-to-rem(55px);
+
+  @include respond-to(sm) {
+    font-size: px-to-rem(64px);
+    line-height: px-to-rem(76px);
+  }
+}
+
+@mixin heading-2 {
+  @include display-font;
+  font-size: px-to-rem(40px);
+  line-height: px-to-rem(48px);
+
+  @include respond-to(sm) {
+    font-size: px-to-rem(52px);
+    line-height: px-to-rem(62px);
+  }
+}
+
+@mixin heading-3 {
+  @include display-font;
+  font-size: px-to-rem(36px);
+  line-height: px-to-rem(43px);
+
+  @include respond-to(sm) {
+    font-size: px-to-rem(46px);
+    line-height: px-to-rem(55px);
+  }
+}
+
+@mixin heading-4 {
+  @include display-font;
+  font-size: px-to-rem(32px);
+  line-height: px-to-rem(38px);
+
+  @include respond-to(sm) {
+    font-size: px-to-rem(38px);
+    line-height: px-to-rem(46px);
+  }
+}
+
+@mixin heading-5 {
+  @include display-font;
+  font-size: px-to-rem(26px);
+  line-height: px-to-rem(32px);
+
+  @include respond-to(sm) {
+    font-size: px-to-rem(32px);
+    line-height: px-to-rem(39px);
+  }
+}
+
+@mixin heading-6 {
+  @include display-font;
+  font-size: px-to-rem(20px);
+  line-height: px-to-rem(25px);
+
+  @include respond-to(sm) {
+    font-size: px-to-rem(22px);
+    line-height: px-to-rem(28px);
+  }
+}

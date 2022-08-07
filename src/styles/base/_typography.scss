@@ -1,0 +1,108 @@
+body,
+p {
+  @include body-font;
+  color: $color-text-dark;
+  font-size: px-to-rem(18px);
+  line-height: px-to-rem(30px);
+}
+
+.extra-large {
+  font-size: px-to-rem(20px);
+  line-height: px-to-rem(34px);
+}
+
+.h1,
+h1 {
+  @include heading-1;
+}
+
+.h2,
+h2 {
+  @include heading-2;
+}
+
+.h3,
+h3 {
+  @include heading-3;
+}
+
+.h4,
+h4 {
+  @include heading-4;
+}
+
+.h5,
+h5 {
+  @include heading-5;
+}
+
+.h6,
+h6 {
+  @include heading-6;
+}
+
+.h1 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @include heading-1;
+  }
+}
+
+.h2 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @include heading-2;
+  }
+}
+
+.h3 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @include heading-3;
+  }
+}
+
+.h4 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @include heading-4;
+  }
+}
+
+.h5 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @include heading-5;
+  }
+}
+
+.h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @include heading-6;
+  }
+}
