@@ -2,6 +2,7 @@ const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
@@ -18,6 +19,7 @@ module.exports = {
       template: './index.html'
     }),
     new CleanWebpackPlugin(),
+    new ESLintPlugin(),
     new CopyPlugin({
           patterns: [
             { from: path.resolve(__dirname, 'src/favicon.png'), to: path.resolve(__dirname, 'dist')}
